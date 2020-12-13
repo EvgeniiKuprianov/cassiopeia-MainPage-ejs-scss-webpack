@@ -1,0 +1,15 @@
+@mixin flexable () {
+    display: flex;
+    justify-content: center;
+};
+
+@mixin flexableBetween () {
+    display: flex;
+    justify-content: space-between;
+};
+
+@mixin flexableNone () {
+    border: none;
+    outline: none;
+};
+

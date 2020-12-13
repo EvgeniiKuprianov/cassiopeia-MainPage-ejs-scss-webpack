@@ -1,0 +1,10 @@
+html {
+    @include flexable();
+    background: #F2F2F2;
+    font-family: Inter;
+}
+
+main {
+    font-weight: $fatText;
+    margin-bottom: 80px;
+}

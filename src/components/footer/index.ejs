@@ -1,0 +1,44 @@
+
+<footer>
+    <article class="footer-container">
+        <%- include(
+            './components/leftColumb.ejs',)-%>
+
+        <%- include(
+        './components/bottombar.ejs', {
+            footBar: [
+                {
+                    list: [
+                        'Help',
+                        'Contact Us',
+                        'Delivery information',
+                        'Payment Information',
+                        'Customer Service', 
+                        'FAQ'
+                    ],    
+                },
+                {
+                    list: [
+                        'About us',
+                        'Our stores',
+                        'Flower care',
+                        'Site map'
+                    ],
+                },
+                { 
+                    list: [
+                        'Legal',
+                        'Privacy police',
+                        'Terms & Conditions',
+                        'Cookie police'
+                    ],
+                },   
+            ],
+        } 
+        )-%>
+    </article>  
+    
+        <%- include(
+        './components/bottomLine.ejs',)-%>
+
+</footer>

@@ -1,0 +1,182 @@
+.title-button {
+    margin: 0 140px;
+    width: 1160px;
+    height: 220px;
+    background-image: url(https://previews.123rf.com/images/naddya/naddya1303/naddya130300165/18272961-horizontal-seamless-background-with-pink-and-white-roses-.jpg);
+    border-radius: $borderRad;
+
+    .top-title-button {
+        width: 138px;
+        height: 50px;
+        background-color: black;
+        color: $backgroundWhite;
+        font-family: inherit;
+        font-weight: $fatText;
+        font-size: 18px;
+        border-radius: $borderRad;
+    }
+
+       
+}
+
+.two-title {
+    @include flexable();
+
+    .title-first {
+        width: 560px;
+        height: 221px;
+        margin: 40px 20px 80px 20px;
+        background-image: url(https://dostavka-roze.ru/a/dostavkaroz/files//userfiles/images/catalog/staby/ofice.jpg);
+        border-radius: $borderRad;    
+    }
+
+    .title-second {
+        width: 560px;
+        height: 221px;
+        margin: 40px 20px 80px 20px;
+        background-image: url(https://edem.by/upload/iblock/4cc/4ccf9b67e12e7c9e78c03dd4cb9cce3d.jpg);
+        border-radius: $borderRad;
+    }
+}
+
+.title-container {
+    padding: 43px 0 0 81px;
+
+    .two-title-button {
+        @include flexableNone();
+        padding-top: 20px;
+        background-color: transparent;
+        font-family: inherit;
+        font-weight: $fatText;
+        font-size: 18px;
+        border-radius: $borderRad;
+    }
+}
+
+.title-name {
+    margin: 0 140px 50px 140px;
+    font-size: 24px;
+
+    .arrows,
+    .arrows:hover,
+    .arrows:active,
+    .arrows1,
+    .arrows1:hover,
+    .arrows1:active  {
+    @include flexableNone();
+    float: right;
+    background-color: $backgroundWhite;
+    }
+}
+
+
+.container {
+    max-width: 1165px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 140px;
+    padding: 0;
+
+    .card {
+        @include flexableNone();
+        height: 368px;
+        min-width: 260px;
+    }
+    
+    .card:hover {
+        transition: 1s;
+        transform: scale(1.2);
+    }
+
+    .bottom-margin {
+        margin-bottom: 41px;   
+    }   
+}
+
+.card:hover .btn-icon {
+    display: unset;
+}
+
+.on-img {
+    position: absolute;
+    margin: -60px 0;
+    width: 260px;
+    text-align: center; 
+}
+
+.btn-icon {
+    @include flexableNone();
+    background-color: $backgroundWhite;
+    border-radius: $borderRad;
+    display: none;
+}
+
+.btn-icon:hover {
+    box-shadow: 0 0 0 4px rgba(51, 11, 230, 0.411);
+}
+
+.btn-icon:hover,
+.btn-icon:focus {
+    @include flexableNone();
+    background-color: $backgroundWhite;
+    border-radius: $borderRad;
+}
+
+.two-title-button:hover,
+.two-title-button:focus,
+.top-title-button:hover,
+.top-title-button:focus {
+    @include flexableNone();
+}
+
+.title-button:hover,
+.title-first:hover, 
+.title-second:hover  {
+    transition: 1s;
+    transform: scale(1.2);
+}
+
+// SLIDER
+
+.wraper, .wraper1  {
+    width: 1443px;
+    padding-left: 10px;
+    padding-bottom: 60px;
+}
+
+.slider-container, .slider-container1 {
+    overflow: hidden;
+    margin: 0 140px;
+}
+
+.slider-track, .slider-track1 {
+    display: flex;
+    transition: 1s;
+}
+
+.slider-item1, .slider-item {
+    padding-right: 35px;
+}
+
+.slider-item:hover .btn-icon {
+    display: unset;
+}
+
+.slider-item1:hover .btn-icon {
+    display: unset;
+}
+
+.img-size {
+    height: 260px;
+    width: 260px;
+    border-radius: $borderRad;
+}
+
+
+.price-name-padding {
+    padding: 10px 0px 0px 10px;
+
+    s {
+        color: lightgrey;
+    }    
+}

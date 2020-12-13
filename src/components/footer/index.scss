@@ -1,0 +1,44 @@
+/* FOOTER */
+
+.footer-container {
+    margin: 0;
+    height: 290px;
+    @include flexableBetween ();
+    background-color: $backgroundLightGrey;
+    width: 1445px;
+    padding: 58px 140px 0;
+    font-weight: $fatText;
+    font-size: 14px;
+
+    .icon {
+        padding-right: 20px;
+    }
+}
+
+.footer-line {
+    background-color: $backgroundLightGrey;
+    height: 70px;
+    
+    hr {
+        background-color: $backgroundLightGrey;
+        margin: 0 140px
+    }
+
+    p {
+        color: Grey;
+        margin: 20px 140px;
+    }
+}    
+
+ul {
+    padding: 0;
+
+    li {
+        padding: 5px 15px;
+        list-style-type: none;
+    }
+}
+
+.active {
+    display: block;
+}

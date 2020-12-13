@@ -1,0 +1,46 @@
+.header-container {
+    width: 1440px;
+    height: 131.5px;
+    padding: 18px 140px 0;
+    font-weight: $fatText;
+
+    .topbar {
+        @include flexableBetween();
+        height: 62px;
+        margin-top: -10px;
+
+        .search {
+            margin-right: 10px;
+        }
+        
+        .top-btn {
+            box-shadow: none;
+            border: none;
+            border-radius: 5px;
+            background: white;
+        }
+
+        .top-btn:hover {
+            box-shadow: 0 0 0 2px rgba(51, 11, 230, 0.411);
+        }
+
+        .top-btn:focus {
+            outline: none;
+            border: none;
+        }
+    }
+
+    .navigation-items {
+        @include flexable();
+        height: 80px;
+
+        .page-links {
+            padding-right: 64px;
+        }
+    }
+}
+
+a,
+a:hover {
+    color: black;
+}

@@ -1,0 +1,13 @@
+
+    <% footBar.forEach(item => { %>
+        <section>
+            <ul>
+            <% item.list.forEach(element => { %>
+                <a href="">
+                 <li><%= element %></li>
+                </a>
+            <% }); %>
+            </ul>
+        </section>
+    <% }); %>
+

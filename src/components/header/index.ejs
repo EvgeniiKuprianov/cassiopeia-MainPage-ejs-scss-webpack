@@ -1,0 +1,15 @@
+
+<header>
+    <div class="header-container">
+        <!-- TOP BAR-->
+    <%- include('./components/topbar.ejs',)-%>
+
+        <!-- PAGE NAVIGATION -->
+    <%- include(
+            './components/navigationPage.ejs',
+            {
+                navPage: ['Flowers', 'Plants', 'Gifts', 'Discount','About us'],
+            },
+    )-%>
+    </div>
+</header>
